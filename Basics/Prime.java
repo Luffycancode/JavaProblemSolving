@@ -78,7 +78,7 @@ count++;
 break;
 }
     }
-    if(count==0 )
+    if(count==0)
     {
         System.out.println(i);
     }
