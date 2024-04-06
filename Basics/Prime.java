@@ -36,29 +36,52 @@ Scanner scan=new Scanner(System.in);
 
 // More effective way to solve this logic. No number can divide it if its greater than its factorial. 
 
-int a= scan.nextInt();
-for(int i=1;i<=a;i++)
+// int a= scan.nextInt();
+// for(int i=1;i<=a;i++)
+// {
+// int count=0;
+// int b=scan.nextInt();
+// for(int j=2;j*j<=b;j++)
+// {
+// if(b%j==0)
+// {
+// count++;
+// break;
+// }
+// }
+
+// if(count==1)
+// {
+// System.out.println("Number is not prime");
+// }
+// else
+// {
+//     System.out.println("Number is prime");
+// }
+
+// }
+
+
+int a=scan.nextInt();
+int b=scan.nextInt(); 
+
+
+for(int i=a;i<=b;i++)
 {
-int count=0;
-int b=scan.nextInt();
-for(int j=2;j*j<=b;j++)
-{
-if(b%j==0)
+
+    int count=0;
+    for(int j=2;j*j<=i;j++)
+    {
+if(i%j==0)
 {
 count++;
 break;
 }
-}
-
-if(count==1)
-{
-System.out.println("Number is not prime");
-}
-else
-{
-    System.out.println("Number is prime");
-}
-
+    }
+    if(count==0 )
+    {
+        System.out.println(i);
+    }
 }
 
 
